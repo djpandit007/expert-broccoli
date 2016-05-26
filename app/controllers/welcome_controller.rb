@@ -1,7 +1,10 @@
 class WelcomeController < ApplicationController
     
     def index
-        render text: "Hello, World!"
+    end
+    
+    def hello
+        @name = params[:q]
     end
     
 end
