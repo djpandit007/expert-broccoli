@@ -5,4 +5,7 @@ Feature: Welcome User
  
     Scenario: Shows hello message
         Given I am on the home page
-        Then I should see "Hello, World!"
+        And I fill in "name" with "Dhananjay"
+        When I press "submit"
+        Then I should see "Hello Dhananjay!"
+        And I should see link to "Back"

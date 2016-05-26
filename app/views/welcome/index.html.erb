@@ -1,7 +1,7 @@
 <h1>Welcome Page</h1>
 <p>Hello, World!</p>
 <%= form_tag("/hello", method: "get") do %>
-  <%= label_tag(:q, "Search for:") %>
-  <%= text_field_tag(:q) %>
-  <%= submit_tag("Search") %>
+  <%= label_tag(:name, "Enter your name:") %>
+  <%= text_field_tag :name %>
+  <%= submit_tag "Submit", id: "submit" %>
 <% end %>

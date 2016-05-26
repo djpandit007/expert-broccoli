@@ -4,7 +4,7 @@ class WelcomeController < ApplicationController
     end
     
     def hello
-        @name = params[:q]
+        @name = params[:name]
     end
     
 end
